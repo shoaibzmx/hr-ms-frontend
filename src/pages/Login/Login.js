@@ -29,7 +29,7 @@ const Login = () => {
     if (!validateForm()) return;
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", formData);
+      const res = await axios.post("https://hr-ms-backend.vercel.app/api//auth/login", formData);
       console.log("Login successful:", res.data);
       navigate("/dashboard");
     } catch (err) {

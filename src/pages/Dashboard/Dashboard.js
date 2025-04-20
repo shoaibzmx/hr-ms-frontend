@@ -105,7 +105,7 @@ const Dashboard = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/api/candidates", {
+      const response = await fetch("https://hr-ms-backend.vercel.app/api/candidates", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(candidateData),
@@ -149,7 +149,7 @@ const Dashboard = () => {
 
   const handleStatusChange = async (id, newStatus) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/candidates/${id}`, {
+      const res = await fetch(`https://hr-ms-backend.vercel.app/api/candidates/${id}`, {
         method: "PUT",
         
         headers: { "Content-Type": "application/json" },

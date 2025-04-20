@@ -26,7 +26,7 @@ const Register = () => {
     }
 
     try {
-      const res = await axios.post("https://hr-ms-backend.vercel.app/auth/register", formData);
+      const res = await axios.post("https://hr-ms-backend.vercel.app/api/auth/register", formData);
        console.log("Registration successful:", res.data);
       navigate("/login");
     } catch (err) {

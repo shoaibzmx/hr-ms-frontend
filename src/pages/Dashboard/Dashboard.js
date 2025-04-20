@@ -67,7 +67,7 @@ const Dashboard = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/candidates")
+    fetch("https://hr-ms-backend.vercel.app/candidates")
       .then((res) => res.json())
       .then((data) => setCandidates(data))
       .catch((err) => console.error("Error fetching candidates:", err));
